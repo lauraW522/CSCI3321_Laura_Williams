@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Moving-squares</title>
+ <style>
+  #border {
+    border-style: solid;
+    border-color: red;
+    width: 800px;
+    height:450px;
+    transition: all 3s ease-in;
+  }
+  #purple-square {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 400px;
+    margin-bottom: 5px;
+    padding: 1px;
+    width: 50px;
+    height:50px;
+    transition: all 3s ease-in;
+  }
+  #blue-square {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-left: 400px;
+    margin-bottom: 5px;
+    padding: 1px;
+    line-height: 50px;
+    width: 50px;
+    height:50px;
+    transition: all 3s ease-in;
+  }
+  #border:hover #purple-square {
+    transform: translate(355px,60px) scale(.75) rotate(-1080deg);
+    }
+  #border:hover #blue-square {
+    transform: translate(-374px,7px) scale(2) rotate(1080deg);
+    }
+  #border:hover {
+    border-radius: 50px;
+    height: 530px;
+  }
+ </style>
+ </head>
+ <body>
+  <div id = "border">
+   <div id = "purple-square">
+   1
+   </div>
+   <div id = "blue-square">
+   2
+   </div>
+   <div id = "purple-square">
+   3
+   </div>
+   <div id = "blue-square">
+   4
+   </div>
+   <div id = "purple-square">
+   5
+   </div>
+   <div id = "blue-square">
+   6
+   </div>
+   <div id = "purple-square">
+   7
+   </div>
+   <div id = "blue-square">
+   8
+   </div>
+  </div>
+ </body>
+</html>
+
+ 
