@@ -1,0 +1,66 @@
+   header {
+    text-align: center;
+   }
+   radio {
+    width: 50%;
+   }
+   .reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    transform: scale(0.8);
+    transition: 0.5s;
+   }
+   input[type="radio"]:checked ~ .reveal-if-active {
+    opacity: 1;
+    max-height: 150px;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
+    }
+   input[type="radio"],label {
+    float:left;
+    margin: 5px;
+   }
+   textarea {
+    margin: auto;
+    width: 280px;
+    height: 100px;
+    display: block;
+    background-color: #ccffff;
+    font-size: 32px;
+   }
+   #calculator {
+    margin: auto;
+    width: 300px;
+    height: 450px;
+    padding: 10px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: gainsboro;
+   }
+   button {
+    width: 65px;
+    height: 47px;
+    font-size: 16px;
+    margin: 1px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+   }
+   #memClear, #memRecall, #memAdd, #memSub, #memStore {
+    width: 50px;
+    height: 35px;
+    background-color: #ffffff;
+   }
+   #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #pos-neg, #zero, #decimal {
+    background-color: #e6ffff;
+   }
+   #equal {
+    background-color: #00e6e6;
+   }
+   button:disabled, #equal:disabled {
+    background: #999;
+    color: #555;
+    cursor: not-allowed;
+   }
