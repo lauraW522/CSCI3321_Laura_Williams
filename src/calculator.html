@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>index</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="../style/calculator.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body onload = "kill_buttons()">
+  <header>
+   <h1>Calculator</h1>
+  </header>
+<script type="text/javascript" src="../JavaScript/calculator.js"></script>
+   <div id = "calculator">
+   <textarea id = "screen" rows = "4" readonly></textarea>
+   <div style="margin:auto;width:280px;float:center;">
+
+     <button class="pure-button" id="percent" onClick="user_click(this.id)" value = "%">%</button>
+     <button class="pure-button" id="clear" onClick="clear_screen()">AC</button>
+     <button class="pure-button" id="backspace" onClick="user_delete()">←</button>
+     <button class="pure-button" id="inverse" onClick="user_click(this.id)" value = "¹/">¹/x</button>
+     <button class="pure-button" id="square" onClick="user_click(this.id)" value = "²">x²</button>
+     <button class="pure-button" id="root" onClick="user_click(this.id)" value = "√(">√</button>
+     <button class="pure-button" id="divide" onClick="user_click(this.id)" value = "÷">÷</button>
+     <button class="pure-button" id="seven" onClick="user_click(this.id)" value = "7">7</button>
+     <button class="pure-button" id="eight" onClick="user_click(this.id)" value = "8">8</button>
+     <button class="pure-button" id="nine" onClick="user_click(this.id)" value = "9">9</button>
+     <button class="pure-button" id="multiply" onClick="user_click(this.id)" value = "×">×</button>
+     <button class="pure-button" id="four" onClick="user_click(this.id)" value = "4">4</button>
+     <button class="pure-button" id="five" onClick="user_click(this.id)" value = "5">5</button>
+     <button class="pure-button" id="six" onClick="user_click(this.id)" value = "6">6</button>
+     <button class="pure-button" id="minus" onClick="user_click(this.id)" value = "−">−</button>
+     <button class="pure-button" id="one" onClick="user_click(this.id)" value = "1">1</button>
+     <button class="pure-button" id="two" onClick="user_click(this.id)" value = "2">2</button>
+     <button class="pure-button" id="three" onClick="user_click(this.id)" value = "3">3</button>
+     <button class="pure-button" id="plus" onClick="user_click(this.id)" value = "+">+</button>
+     <button class="pure-button" id="pos-neg" onClick="user_click(this.id)" value = "-">±</button>
+     <button class="pure-button" id="zero" onClick="user_click(this.id)" value = "0">0</button>
+     <button class="pure-button" id="decimal" onClick="user_click(this.id)" value = ".">․</button>
+     <button class="pure-button" id="equal" onClick = "solve_expr()">=</button>
+   </div>
+   </div>
+ </body>
+</html>
