@@ -1,0 +1,115 @@
+header {
+  text-align: center;
+}
+header h1, h3 {
+  margin-top: -10px;
+  text-align: center;
+}
+.gameboard {
+  display: grid;
+  width: 450px;
+  height: 450px; 
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  grid-template-columns: 130px 130px 130px;
+  grid-template-rows: 130px 130px 130px 20px;
+  justify-content: left;
+  background-color: #7d4b00;
+  background-image: url("../images/wood-pattern.png");
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+  border-style: solid;
+  border-color: #523100;
+  border-width: 20px;
+  border-left: none;
+  border-top: none;
+  margin-top: -40px;
+ }
+.box {
+  width: 120px;
+  height: 120px; 
+  margin: 15px;
+  background-color: #523100;
+  background-image: url("../images/wood-pattern.png");
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+ }
+.flip-panel {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: transparent;
+  perspective: 1000px;
+  cursor: pointer;
+  animation-play-state:running;
+}
+.flip-panel-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-panel:hover .flip-panel-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-panel-front, .flip-panel-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-panel-front {
+  background-color: #7d4b00;
+  background-image: url("../images/wood-pattern.png");
+}
+.flip-panel-back {
+  background-color: #7d4b00;
+  background-image: url("../images/wood-pattern.png");
+  transform: rotateY(180deg); 
+}
+.flip-panel-back h2 {
+  font-size: 56px;
+  text-align: center;
+  color: white;
+  font-family: "Papyrus";
+  line-height: 25px;
+}
+.flip-panel-front h2 {
+  font-size: 56px;
+  text-align: center;
+  color: white;
+  font-family: "Papyrus";
+  line-height: 100px;
+}
+.flipped-panel,  .flipped-panel h2 {
+  font-size: 56px;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Papyrus";
+  line-height: 100px;
+  background-color: #7d4b00;
+  background-image: url("../images/wood-pattern.png");
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+button { 
+  width: 200px;
+  float: center;
+  display: block;
+  font-size: 24px;
+  margin: auto;
+  margin-top: -15px;
+  background-color: #7d4b00;
+  background-image: url("../images/wood-pattern.png");
+  color: white;
+  cursor: pointer;
+}
