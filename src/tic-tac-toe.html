@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>index</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+ <link href="../style/tic-tac-toe.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+  <header>
+   <h1>Tic-Tac-Toe</h1>
+   <h3>Player X starts first. Three Xs or three Os in a row to win!</h3>
+  </header>
+ 
+<script type="text/javascript" src="../JavaScript/tic-tac-toe.js"></script>
+<button id = "play-button" onclick="restart_game()">Start</button><br><br><br>
+   <div class = "gameboard">
+    <div class="box">
+     <div class="flip-panel"  id = "panel1" onclick="clicked_square('panel1', 'square1')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square1" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back1">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel2" onclick="clicked_square('panel2', 'square2')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square2" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back2">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel3" onclick="clicked_square('panel3', 'square3')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square3" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back3">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel4" onclick="clicked_square('panel4', 'square4')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square4" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back4">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel5" onclick="clicked_square('panel5', 'square5')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square5" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back5">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel6" onclick="clicked_square('panel6', 'square6')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square6" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back6">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel7" onclick="clicked_square('panel7', 'square7')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square7" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back7">X</h2></div></div></div></div>
+    <div class="box">
+     <div class="flip-panel"  id = "panel8" onclick="clicked_square('panel8', 'square8')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square8" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back8">X</h2></div></div></div></div>
+   <div class="box" >
+     <div class="flip-panel"  id = "panel9" onclick="clicked_square('panel9', 'square9')">
+      <div class="flip-panel-inner">
+       <div class="flip-panel-front">
+        <h2 id = "square9" style="display:none;" >X</h2></div>
+       <div class="flip-panel-back">
+        <h2 id = "square-back9">X</h2></div></div></div></div>
+  </div>
+  <br><h3 id ="instructions">Click start to begin the game.</h3>
+ </body>
+</html>
